@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\nawadata-2.props" />
+</Project>
