@@ -3,6 +3,8 @@ namespace nawadata_2.Services
     public class Soal3Service
     {
         public static List<int> BubbleSort(List<int> numbers){
+            if(numbers.Count <= 1) return numbers;
+            
             List<int> sortedNumbers = numbers[0..numbers.Count];
             while(true){
                 int counter = 0;

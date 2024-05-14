@@ -41,35 +41,51 @@ namespace nawadata_2.Views
         }
 
         private static void MenuQuestion1(){
-            string text = "Halo, nama saya jhon Dhoe";
-            int wordsCount = Soal1Service.CountWord(text);
+            try{
+                string text = "Halo, nama saya jhon Dhoe";
+                int wordsCount = Soal1Service.CountWord(text);
 
-            Console.WriteLine($"In: '{text}'");
-            Console.WriteLine($"Out: The number of words in the sentence '{text}' is: {wordsCount}");
+                Console.WriteLine($"In: '{text}'");
+                Console.WriteLine($"Out: The number of words in the sentence '{text}' is: {wordsCount}");
+            }catch(NullReferenceException){
+                Console.WriteLine("Input cannot be null");
+            }
         }
 
         private static void MenuQuestion2(){
-            List<int> numbers = [1,5,3,7,2];
-            int maxValue = Soal2Service.MaxValue(numbers);
-            
-            Console.WriteLine($"In: '{Util.ArrayToString<int>(numbers)}'");
-            Console.WriteLine($"Out: Maximum value in array {Util.ArrayToString<int>(numbers)} is: {maxValue}");
+            try{
+                List<int> numbers = [1,5,3,7,2];
+                int maxValue = Soal2Service.MaxValue(numbers);
+                
+                Console.WriteLine($"In: '{Util.ArrayToString<int>(numbers)}'");
+                Console.WriteLine($"Out: Maximum value in array {Util.ArrayToString<int>(numbers)} is: {maxValue}");
+            }catch(NullReferenceException){
+                Console.WriteLine("Input cannot be null");
+            }
         }
 
         private static void MenuQuestion3(){
-            List<int> numbers = [3,1,5,2,4];
-            var sortedNumbers = Soal3Service.BubbleSort(numbers);
+            try{
+                List<int> numbers = [3,1,5,2,4];
+                var sortedNumbers = Soal3Service.BubbleSort(numbers);
 
-            Console.WriteLine($"In: '{Util.ArrayToString<int>(numbers)}'");
-            Console.WriteLine($"Out: The sorting result of the array {Util.ArrayToString<int>(numbers)} is: {Util.ArrayToString<int>(sortedNumbers)}");
+                Console.WriteLine($"In: '{Util.ArrayToString<int>(numbers)}'");
+                Console.WriteLine($"Out: The sorting result of the array {Util.ArrayToString<int>(numbers)} is: {Util.ArrayToString<int>(sortedNumbers)}");
+            }catch(NullReferenceException){
+                Console.WriteLine("Input cannot be null");
+            }
         }
 
         private static void MenuQuestion4(){
-            string word = "Hello";
-            var res = Soal4Service.MaxLetter(word);
+            try{
+                string word = "Hello";
+                var res = Soal4Service.MaxLetter(word);
 
-            Console.WriteLine($"In: '{word}'");
-            Console.WriteLine($"Out: The most letters out of the word '{word}' is '{res["letter"]}' as many is: {res["value"]}");
+                Console.WriteLine($"In: '{word}'");
+                Console.WriteLine($"Out: The most letters out of the word '{word}' is '{res["letter"]}' as many is: {res["value"]}");
+            }catch(NullReferenceException){
+                Console.WriteLine("Input cannot be null");
+            }
         }
     }
 }

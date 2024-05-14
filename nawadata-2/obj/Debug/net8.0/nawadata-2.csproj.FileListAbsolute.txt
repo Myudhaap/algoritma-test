@@ -23,3 +23,4 @@ C:\Yudha\tes\Nawadata2\nawadata-2\obj\Debug\net8.0\refint\nawadata-2.dll
 C:\Yudha\tes\Nawadata2\nawadata-2\obj\Debug\net8.0\nawadata-2.pdb
 C:\Yudha\tes\Nawadata2\nawadata-2\obj\Debug\net8.0\nawadata-2.genruntimeconfig.cache
 C:\Yudha\tes\Nawadata2\nawadata-2\obj\Debug\net8.0\ref\nawadata-2.dll
+C:\Yudha\tes\Nawadata2\nawadata-2\obj\Debug\net8.0\nawadata-2.sourcelink.json
